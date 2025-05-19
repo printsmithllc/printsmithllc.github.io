@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Print Service</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>3D Print Hub</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="upload.html">Submit STL</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Bring Your Ideas to Life</h2>
+      <p>Upload your STL files and let us do the printing!</p>
+      <a href="upload.html" class="cta-button">Submit Your File</a>
+    </section>
+
+    <section id="upload">
+      <h2>STL File Submission</h2>
+      <form id="upload-form" action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="file">Upload STL File:</label>
+        <input type="file" id="file" name="file" accept=".stl" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 3D Print Hub</p>
+  </footer>
+</body>
+</html>
